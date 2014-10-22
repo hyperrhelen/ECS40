@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Helen Chac
+#
+
+
+if [ $# -eq 0 ]; then
+  echo "usage: uncomp {filelist}+" 
+fi
+
+if [ $# -gt 0 ]; then
+  for filename in $@; do
+    if [[ $filename = *.tar.gz && -e $filename ]]; then
+      tar -xzf $filename
+    elif [[ $filename = *.tar.Z && -e $filename ]]; then
+      tar -xZf $filename
+    elif [[ $filename = *.tar && -e $filename ]]; then
+      tar -xf $filename
+    elif [[ $filename = *.zip && -e $filename ]]; then
+      unzip -q $filename
+    elif [[ $filename = *gz && -e $filename ]]; then
+      gunzip -q $filename
+    elif [[ $filename = *.Z && -e $filename ]]; then
+      uncompress -q $filename
+    else
+      echo "uncomp: $f has no compression extension."
+    fi
+  done
+fi
