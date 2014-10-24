@@ -1,0 +1,24 @@
+Calendar Menu
+0. Done.
+1. Search for date.
+2. Search for subject.
+3. Add an appointment.
+Your choice >> 
+Please enter the month and day (mm/dd) >> Subject >> Location >> Start time >> Your time is invalid.
+Format of time is hh:mm PM or hh:mm AM.
+
+Time >> End time >> Calendar Menu
+0. Done.
+1. Search for date.
+2. Search for subject.
+3. Add an appointment.
+Your choice >> 
+Choice must be between 0 and 3.
+Please try again.
+
+Calendar Menu
+0. Done.
+1. Search for date.
+2. Search for subject.
+3. Add an appointment.
+Your choice >> 
